@@ -22,7 +22,7 @@ function Register() {
         e.preventDefault()
 
         try {
-            await API.post("user/", form)
+            await API.post("api/v1/user/", form)
 
             alert("Registered Successfully")
             navigate("/login")

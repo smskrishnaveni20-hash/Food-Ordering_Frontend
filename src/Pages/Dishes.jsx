@@ -12,7 +12,7 @@ function Dishes() {
   const query = new URLSearchParams(location.search).get("search")?.toLowerCase() || "";
 
   useEffect(() => {
-    API.get("dishes/")
+    API.get("api/v1/dishes/")
       .then((res) => setDishes(res.data))
       .catch((err) => console.log(err));
   }, []);

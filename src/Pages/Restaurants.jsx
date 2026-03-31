@@ -7,7 +7,7 @@ function Restaurants(){
     const navigate = useNavigate()
 
     useEffect(()=>{
-        API.get("restaurants/").then((res) => setRestaurants(res.data))
+        API.get("api/v1/restaurants/").then((res) => setRestaurants(res.data))
     }, [])
 
     return(

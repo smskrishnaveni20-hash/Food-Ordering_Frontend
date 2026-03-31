@@ -7,7 +7,7 @@ function Payment(){
 
     const payNow = ()=> {
         axios.post(
-            "http://127.0.0.1:8000/api/v1/orders/payments",
+            "api/v1/orders/payments",
             {
                 order : 1,
                 payment_method : method
